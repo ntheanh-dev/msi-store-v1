@@ -1,0 +1,57 @@
+.wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+.label {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--black);
+}
+.importantmark {
+    color: #c94d3f;
+    font-size: 16px;
+}
+.input {
+    height: 50px;
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 25px;
+    border: 1px solid var(--gray8C8);
+    color: var(--gray8C8);
+    font-size: 14px;
+    border-radius: 6px;
+
+    & + span {
+        color: red;
+        font-size: 12px;
+        padding: 3px;
+        display: none;
+    }
+
+    &:invalid[focused='true'] {
+        border-color: red;
+    }
+    &:invalid[focused='true'] ~ span {
+        display: block;
+    }
+}
+.icon {
+    position: absolute;
+    font-size: 20px;
+    top: 50px;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    & > svg {
+        color: var(--gray8C8);
+    }
+}
+.icon-without-lable {
+    top: 25px !important;
+}
+.textarea {
+    width: 100%;
+    resize: none;
+}

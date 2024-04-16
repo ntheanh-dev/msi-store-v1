@@ -1,0 +1,31 @@
+
+# @name getoneuser
+GET https://json-server-sand.vercel.app/api/users
+###
+
+
+
+
+
+# @name getAllProDuctByID
+
+GET https://json-server-sand.vercel.app/api/users?email=admin1@gmail.com
+
+###
+
+# @name PUTUSER
+
+POST https://json-server-sand.vercel.app/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "amin",
+    "email": "anh@gmail.com",
+    "password": "Theanh28@",
+    "avata": "/images/avata1.jpg",
+    "cart": {
+      "cartItems": [],
+      "cartTotalAmount": 0,
+      "cartTotalQuantity": 0
+    }
+}
